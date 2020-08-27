@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 
-    <title>Video.js | HTML5 Video Player</title>
-    <link href="./js/videojs/video-js.min.css" rel="stylesheet">
-    <script src="./js/videojs/video.min.js"></script>
-    <script src="./js/videojs-playlist.min.js"></script>
-    <script src="./js/Youtube.min.js"></script>
+<title>Video.js | HTML5 Video Player</title>
+<link href="./js/videojs/video-js.min.css" rel="stylesheet">
+<script src="./js/videojs/video.min.js"></script>
+<script src="./js/videojs-playlist.min.js"></script>
+<script src="./js/Youtube.min.js"></script>
 
 </head>
 <body>
 
-  <video id="player" class="video-js" controls autoplay preload="none" width="854" height="480" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+<video id="player" class="video-js" controls autoplay muted preload="auto" width="854" height="480">
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-  </video>
+ </video>
 
 <script>
 var player = videojs("player");
@@ -43,7 +43,6 @@ player.playlist([
 // Play through the playlist automatically.
 player.playlist.autoadvance(0);
 player.playlist.repeat(true);
-</script>
 </script>
 
 </body>
